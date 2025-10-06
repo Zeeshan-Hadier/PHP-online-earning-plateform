@@ -122,10 +122,10 @@ a.sliderlinkshow:focus {
   <div class="d-flex justify-content-between">
 
     <div style="display:none;" id="selfpurchase">
-      <?php echo "100"; ?>
+      <?php echo "0"; ?>
     </div>
 
-    <div style="display:none;" id="teampurchase">430</div>
+    <div style="display:none;" id="teampurchase">0</div>
 
     <div class="progress-container pt-3">
       <div class="title">Self Purchase</div>
@@ -318,4 +318,5 @@ a.sliderlinkshow:focus {
 <script src="script.js"></script>
 </body>
 </html>
+
 
