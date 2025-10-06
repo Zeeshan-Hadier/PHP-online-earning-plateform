@@ -1,0 +1,597 @@
+:root {
+  --primary-color: #000000;   /* Indigo */
+  --secondary-color: #e2a80a; /* Emerald */
+  --text-color: #ffffff;      /* White */
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    margin:0%;
+    padding: 0%;
+    display: flex;
+     justify-content: center;
+    min-height: 100vh;
+   
+      
+
+}
+.bodycon{
+    box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 500px; 
+    background-color: black;
+    color:white;
+     overflow-x: hidden;
+    
+}
+/*__________________________________Nav Bar_________________________________________*/
+.nav {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--primary-color);
+    color:white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;  /* increased */
+    box-shadow: 0px 0px 18px rgb(0, 0, 0);
+    border-bottom: 3px solid var(--secondary-color);
+    max-width: 500px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--secondary-color);
+    width: 70%;
+    
+}
+.logotext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo img {
+  max-width: 100%;   
+  height: auto;     
+  width: 60px;       
+  height: 60px;     
+  object-fit: contain; 
+}
+
+.togal{
+    height: 64%;
+    width: 12%;
+    padding: 1%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(34, 32, 32);
+}
+.smalltext{
+    font-size: 0.5rem;
+    padding: 0%;
+    margin: 0%;
+    margin-top: -8px;
+    color:white
+}
+.telegram img {
+  max-width: 100%;   
+  height: auto;      
+  width: 40px;       
+  height: 40px;  
+  border-radius: 50%;    
+  object-fit: contain; 
+}
+/*__________________________________End of Nav Bar_________________________________________*/
+/*__________________________________Hero Section_________________________________________*/
+.hero{
+    height: 35vh;
+    background-color: var(--secondary-color);
+    margin-top: 10vh;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+}
+.info{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    color:white;
+}
+.propic{
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid rgb(34, 34, 34);
+    width: 60px;
+    height: 54px;
+}
+.balance{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.marquee{
+    color:white;
+}
+.datainfo{
+    display: flex;
+    justify-content: space-around;
+    color:white;
+}
+.tbox{
+    width: 47%;
+    height: 28vh;
+     box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.589);
+     z-index: 10;
+     margin-top: -8vh;
+     background-color: #000000;
+     border-radius: 15px;
+     color:white;
+     flex-direction: column;
+
+}
+.upereye{
+    margin-left: 85%;
+}
+
+.b1{
+    width: 6vh;
+    height: 6vh;
+    background-color:  #caa606dc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnhero{
+    justify-content: space-around;
+}
+.btntop{
+    margin-top: 2vh;
+    padding:1vh;
+    color:white;
+    font-weight: 700;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+.inboxs{
+    font-size: 0.7rem;
+}
+.colorlight{
+    color:rgba(211, 211, 211, 0.938);
+}
+.sliderunderhero{
+    border: 3px solid var(--secondary-color);
+    border-radius: 15px;
+    height: 130px;
+    overflow: hidden;
+}
+.byellow{
+    width: 48%;
+    height: 20vh;
+    background-color:var(--secondary-color);
+     box-shadow: 0px 0px 18px rgba(214, 211, 211, 0.692);
+     border-radius: 15px;
+}
+.bblack{
+    width: 48%;
+    height: 20vh;
+    background-color: var(--primary-color);
+      box-shadow: 0px 0px 18px rgba(211, 209, 209, 0.76);
+      border-radius: 15px;
+}
+.fsize{
+    font-size: 0.7rem;
+}
+.fsize2{
+    font-size: 0.9rem;
+}
+.btncollectearn{
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1vh;
+    color: white;
+    border-radius: 10px;
+}
+/*_____________________________Footer__________________*/
+ footer {
+  background-color: var(--primary-color);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   border-top: 4px solid var(--secondary-color);
+  z-index: 800;
+  background-color: #000000;
+  
+}
+.footerspace{
+    height: 6vh;
+   visibility: hidden;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 600px;
+  background-color: #000000;
+  height: 100%;
+  align-items: center;
+}
+
+.footer-item a {
+  display: flex;
+  flex-direction: column; /* icon on top, text below */
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.footer-item i {
+  font-size: 18px;
+  margin-bottom: 3px;
+  color: white;
+}
+
+/*______________________________End of Footer__________*/
+/*___________________________Slider________________*/
+
+  /* Overlay */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.57); /* black with opacity */
+    z-index: 100; /* below slider */
+    display: none; /* hidden initially */
+    transition: opacity 0.3s ease;
+  }
+
+  .overlay.active {
+    display: block;
+  }
+
+  /* Slider container */
+  .slider {
+    position: fixed;
+    top: 0;
+    left: -300px; /* hidden initially (from left) */
+    width: 250px;
+    height: 100%;
+    background-color: black;
+    color: white;
+    transition: left 0.4s ease; /* smooth effect */
+    z-index: 200; /* above overlay */
+    padding: 20px;
+    padding-top: 10vh;
+    border-right:3px solid var(--secondary-color); 
+  }
+
+  /* Active state (when visible) */
+  .slider.active {
+    left: 0; /* slide in from left */
+  }
+
+  /* Close button */
+  .close-btn {
+    font-size: 24px;
+    color: yellow;
+    cursor: pointer;
+    float: right;
+  }
+
+  /* Example content */
+  .slider-content {
+    margin-top: 30px;
+  }
+/*_____________________________End of Slider__________*/
+/*_____________________________Team__________*/
+/* Container */
+ .scroll-wrapper {
+     display:flex;
+      gap:8px;
+       padding:12px;
+        overflow-x:auto; }
+        .scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+  .level-btn{
+    position: relative;            /* required for the ::before fill */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 130px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    border: 2px solid #e2a80a;    /* yellow border */
+    color: #fff;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;              /* hide the pseudo-element overflow */
+    transition: color 0.25s ease;
+    user-select: none;
+  }
+
+  .level-btn span { z-index: 2; position: relative; }
+
+  /* animated fill (left -> right) */
+  .level-btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #e2a80a 0%, #f7d46a 100%); /* yellow gradient fill */
+    transform: scaleX(0);          /* start collapsed */
+    transform-origin: left center;
+    transition: transform 1s cubic-bezier(.2,.9,.2,1);
+    z-index: 1;                    /* sits behind the text (text has z-index 2) */
+  }
+
+  /* active state: fill expands */
+  .level-btn.activebtn::before {
+    transform: scaleX(1);
+  }
+
+  /* change text color when filled */
+  .level-btn.activebtn {
+    color: #000;                   /* black text when filled */
+  }
+
+  /* hover (optional subtle effect) */
+  .level-btn:hover { filter: brightness(1.03); }
+  
+  /* responsive small-screen adjustment */
+  @media (max-width:501px){
+    .level-btn { min-width: 92px; padding: 9px 10px; font-size: 0.9rem; }
+  }
+  .levelhead{
+    color: var(--secondary-color);
+  }
+.teamdetails{
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 02px 02px 5px rgba(255, 255, 255, 0.589);
+}
+.hidden{
+    display: none;
+}
+
+  .progress-container {
+      text-align: center;
+      color: white;
+    }
+
+    .progress-circle {
+      position: relative;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: conic-gradient(yellow 0deg, yellow 0deg, white 0deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 10px;
+    }
+
+    .progress-circle::before {
+      content: "";
+      position: absolute;
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      background: white;
+    }
+
+    .progress-value {
+      position: absolute;
+      font-weight: bold;
+      font-size: 14px;
+      color: black;
+    }
+
+    .amount {
+      font-weight: bold;
+      color: white;
+    }
+
+    .title {
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+  
+.rankhero{
+    display: flex;
+    padding: 10vh;
+    background-color: var(--secondary-color);
+    justify-content: space-between;
+    flex-direction: column;
+}
+.levelcard{
+     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.589);
+     border-radius: 15px;
+     padding: 0.5rem;
+     background-color: black;
+}
+.middletext{
+    color:var(--secondary-color);
+}
+.border1{
+    background-color: var(--secondary-color);
+    height: 1vh;
+    width: 50%;
+    border-radius: 15px;
+}
+.lux{
+  background-color: var(--primary-color);
+   box-shadow: 0px 0px 7px var(--secondary-color);
+   border-bottom: 5px solid var(--secondary-color);
+   width: 90%;
+   display: flex;
+   padding: 1rem;
+   border-radius: 15px;
+   flex-direction: column;
+}
+.availbtn{
+  background-color: green;
+  color: white;
+  border-radius: 20px;
+  height: 1.7rem;
+}
+.unavailbtn{
+  background-color:red;
+  color: white;
+  border-radius: 20px;
+  height: 1.7rem;
+}
+.luxcon{
+  display: flex;
+  justify-content: space-between;
+}
+.luxdet{
+  display: flex;
+  flex-direction: column;
+}
+.buttoninvest{
+  background-color: var(--secondary-color);
+  color: white;
+  width: 98%;
+  margin: 0rem;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  padding: 2px;
+}
+#warn{
+  position: fixed;
+  margin: 0%;
+  padding: 0%;
+  z-index: 200;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.reflink{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  border:1px solid var(--secondary-color);
+  color:var(--secondary-color);
+  border-radius: 10px;
+}
+#buttonofcopyreflink{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+}
+.informationpro{
+  height: 22vh;
+  padding: 0.5rem;
+  justify-content: space-between;
+}
+.sponser{
+  display: flex;
+  flex-direction: column;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.389);
+     padding-left: 2rem;
+     padding-right: 2rem;
+     font-size: 0.6rem;
+     justify-content: center;
+     align-items: center;
+     border-radius: 15px;
+}
+.sponsorbtn {
+  display: inline-block;
+  padding: 1px 30px;
+  background: linear-gradient(to right, #c68c00, #f9e58c); /* gold gradient */
+  border-radius: 25px; /* makes it pill shaped */
+  color: black;
+  font-size: 10px;
+  font-weight: 500;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* subtle shadow */
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.sponsorbtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.teamdet{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left:1rem;
+  padding-right: 1rem;
+}
+.div1pro{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.389);
+    width: 100%;
+}
+.bgcolor{
+  background-color: #f5d752;
+  color: white;
+  border-radius: 10px;
+  padding: 0.3rem;
+  font-size: 18px;
+  margin: 0.5rem;
+}
+.color2{
+  color:var(--secondary-color);
+  font-size: 0.5rem;
+}
+.color2p{
+  color:var(--secondary-color);
+  
+}
+.editbtn{
+  border: none;
+  outline: none;
+  margin-left:-2vh;
+  z-index: 400;
+  border-radius: 50%;
+  padding-left:1px ;
+  padding-right: 1px;
+}
+.boxpro{
+  height: 20vh;
+  width: 40%;
+  border-bottom: 8px solid var(--secondary-color);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px #f5d752;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
